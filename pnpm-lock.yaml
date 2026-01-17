@@ -90,15 +90,9 @@ importers:
       eslint:
         specifier: ^8.54.0
         version: 8.57.1
-      ts-loader:
-        specifier: ^9.5.1
-        version: 9.5.4(typescript@5.9.3)(webpack@5.97.1)
       typescript:
         specifier: ^5.3.0
         version: 5.9.3
-      webpack:
-        specifier: ^5.97.1
-        version: 5.97.1
 
   apps/web:
     dependencies:
@@ -166,6 +160,9 @@ importers:
 
   packages/shared:
     devDependencies:
+      '@types/node':
+        specifier: ^20.10.0
+        version: 20.19.30
       typescript:
         specifier: ^5.3.0
         version: 5.9.3
@@ -6065,22 +6062,6 @@ packages:
       typescript: '>=4.2.0'
     dependencies:
       typescript: 5.9.3
-    dev: true
-
-  /ts-loader@9.5.4(typescript@5.9.3)(webpack@5.97.1):
-    resolution: {integrity: sha512-nCz0rEwunlTZiy6rXFByQU1kVVpCIgUpc/psFiKVrUwrizdnIbRFu8w7bxhUF0X613DYwT4XzrZHpVyMe758hQ==}
-    engines: {node: '>=12.0.0'}
-    peerDependencies:
-      typescript: '*'
-      webpack: ^5.0.0
-    dependencies:
-      chalk: 4.1.2
-      enhanced-resolve: 5.18.4
-      micromatch: 4.0.8
-      semver: 7.7.3
-      source-map: 0.7.4
-      typescript: 5.9.3
-      webpack: 5.97.1
     dev: true
 
   /ts-node@10.9.2(@types/node@20.19.30)(typescript@5.9.3):
